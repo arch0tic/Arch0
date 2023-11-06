@@ -10,12 +10,8 @@ from discord.ext import commands
 import asyncio
 
 bot = discord.Bot()
-
-# we need to limit the guilds for testing purposes
-# so other users wouldn't see the command that we're testing
-
-@bot.command(description="Sends the bot's latency.") # this decorator makes a slash command
-async def arch(ctx): # a slash command will be created with the name "ping"
+@bot.command(description="Sends the bot's latency.")
+async def arch(ctx): 
     await ctx.respond(f"# Arch Linux is the best distro ever")
 @bot.command(description="Inspiring quote")
 async def inspire(ctx):
