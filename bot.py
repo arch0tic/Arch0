@@ -1,8 +1,5 @@
 import discord
-from ip2geotools.databases.noncommercial import DbIpCity
-import nmap3
 import os
-import subprocess
 import requests
 import json
 from discord.ext.commands import Bot
