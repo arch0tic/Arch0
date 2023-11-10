@@ -28,4 +28,4 @@ async def on_message(message):
 async def on_ready():
     activity = discord.Game(name="Arch BTW!")
     await bot.change_presence(status=discord.Status.idle, activity=activity)
-bot.run("MTE0ODI1MjY4MDU2NTgyMTUwMA.GDX9QH.EU4aFYHblRkiaRQM-7aMwtZIv8DOc4lCDhKWBM")
+bot.run("")
