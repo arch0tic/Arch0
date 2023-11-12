@@ -17,14 +17,6 @@ async def inspire(ctx):
     quote = json_data[0]["q"]
     await ctx.respond(quote)
 @bot.event
-async def on_message(message):
-    if(message.content.startswith('inspire')):
-        print("yes")
-        response = requests.get("https://zenquotes.io/api/random")
-        json_data = json.loads(response.text)
-        quote = json_data[0]["q"]
-        await message.channel.send(quote)
-@bot.event
 async def on_ready():
     activity = discord.Game(name="Arch BTW!")
     await bot.change_presence(status=discord.Status.idle, activity=activity)
